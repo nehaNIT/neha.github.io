@@ -34,12 +34,12 @@
 */
 
 // Define base and accent colors
-$base-color: #3498db;
+$base-color: #abcfc9;
 $base-color-hover: darken($base-color, 10%);
 
 // Define background colors
-$background: #fff;
-$background-alt: #f2f2f5;
+$background: #fafffe;
+$background-alt: #f2f5f4;
 
 // Define border colors
 $border: #dcd9d9;
@@ -203,10 +203,10 @@ header {
 #mobile-menu-open {
     display: none;
     cursor: pointer;
-    position: fixed;
+    position: sticky;
     right: 15px;
     top: 10px;
-    color: $base-color;
+    color: $background;
     font-size: 1.5em;
     z-index: 20;
     padding: 0 7px;
