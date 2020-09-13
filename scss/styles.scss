@@ -608,7 +608,7 @@ footer {
 
     h3 {
         font-weight: 500;
-        float: left;
+        float: center;
         margin: 0;
         color: $heading;
     }
@@ -634,6 +634,11 @@ footer {
     ul {
         padding: 0 0 0 15px;
     }
+}
+
+.edu-image{
+    float:right;
+
 }
 
 /*
@@ -742,22 +747,27 @@ footer {
 */
 
 #contact {
-    padding: 50px 15px;
-    background: $base-color;
+    padding: 50px;
     text-align: center;
-
-    h2 {
-        margin: 0 0 15px 0;
-        color: #fff;
-        font-weight: 500;
-    }
 }
 .column {
   float: left;
   width: 33.33%;
+  height: 325px;
+  padding: 10px;
+  background: #fff;
+      h3 {
+        font-size: 1.5em;
+        font-weight: 300;
+        color: $heading;
+        margin: 0 0 15px 0;
+        padding: 10px;
+    }
 }
 
+.contact-image{
 
+}
 
 #contact-form {
     max-width: 500px;
@@ -981,6 +991,12 @@ footer {
         display: none;
     }
     .about-image {
+        display: none;
+    }
+    .contact-image{
+    display: none;
+    }
+    .edu-image {
         display: none;
     }
 
