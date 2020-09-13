@@ -23,7 +23,7 @@
         <div id="mobile-menu-close">
             <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
         </div>
-        <ul id="menu" class="shadow">
+        <ul id="menu" class="shadow" >
             <li>
                 <a href="#about">About</a>
             </li>
@@ -43,6 +43,23 @@
                 <a href="#contact">Contact</a>
             </li>
         </ul>
+    </header>
+    <!-- End header -->
+
+    <div id="lead">
+        <div id="lead-content">
+            <h1>Neha Upadhyay</h1>
+            <h2>I'm a
+                <span
+                        class="txt-rotate"
+                        data-period="2000"
+                        data-rotate='[ "Software Developer.", "Deep Learning Enthusiast.", "Green Entrepreneur."]'></span>
+            </h2>
+            <!--<h2>Software Developer | Deep learning Enthusiast | Green Entrepreneur</h2>-->
+            <a href="Resume.pdf" class="btn-rounded-white"><i class="fa fa-download" download></i> Download Resume</a>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7 col-sm-5 social">
                     <ul>
                         <li>
                             <a href="https://github.com/" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
@@ -56,16 +73,10 @@
                         <li>
                             <a href="https://instagram.com/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
                         </li>
-
                     </ul>
-    </header>
-    <!-- End header -->
-
-    <div id="lead">
-        <div id="lead-content">
-            <h1>Neha Upadhyay</h1>
-            <h2>Software Developer | Deep learning Enthusiast | Green Entrepreneur</h2>
-            <a href="#" class="btn-rounded-white">Download Resume</a>
+                    </div>
+                </div>
+        </div>
         </div>
         <!-- End #lead-content -->
 
@@ -83,9 +94,12 @@
     <div id="about">
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-8">
                     <h2 class="heading">About Me</h2>
                 </div>
+                    <div class="col-md-4 about-image">
+                        <img src="images/Neha.JPG"/>
+                    </div>
                 <div class="col-md-8">
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat. Donec
@@ -234,15 +248,36 @@
     <!-- End #skills -->
 
     <div id="contact">
-        <h2>Get in Touch</h2>
-        <div id="contact-form">
+        <h2 class="heading">Contact Me</h2>
+        <!--<div id="contact-form">
             <form method="POST" action="https://formspree.io/email@email.com">
                 <input type="hidden" name="_subject" value="Contact request from personal website" />
                 <input type="email" name="_replyto" placeholder="Your email" required>
                 <textarea name="message" placeholder="Your message" required></textarea>
                 <button type="submit">Send</button>
-            </form>
-        </div>
+            </form>-->
+          		<div class="container">
+                    <div class="row">
+                    <div class="column shadow-large">
+                        <i class="fa fa-map-signs"></i>
+                        <h3>Address</h3>
+		                <p>107-B, Girikunj Apartment, 390, S.N.Roy Road</p>
+                        <p>Kolkata-700038, WB, India</p>
+                    </div>
+                    <div class="column shadow-large">
+                        <i class="fa fa-phone"></i>
+                        <h3>Contact Number</h3>
+		                <p>Personal: <a href="tel://1234567920">+ 1235 2355 98</a></p>
+		                <p>Alternate: <a href="tel://1234567920">+ 1235 2355 98</a></p>
+                    </div>
+                    <div class="column shadow-large">
+                        <i class="fa fa-paper-plane"></i>
+                        <h3>Email Address</h3>
+		                <p>Personal: <a href="mailto:info@yoursite.com">info@yoursite.com</a></p>
+		                <p>Company: <a href="mailto:info@yoursite.com">info@yoursite.com</a></p>
+                    </div>
+                    </div>
+                </div>
         <!-- End #contact-form -->
     </div>
     <!-- End #contact -->

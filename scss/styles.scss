@@ -459,6 +459,18 @@ footer {
     }
 }
 
+    .about-image{
+
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto 30px auto;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 4px;
+
+        float: right;
+    }
+
 /*
     --------------------------------
     ----- 6. Experience Styles -----
@@ -654,6 +666,7 @@ footer {
     float: left;
 }
 
+
 .project-info {
     position: absolute;
     top: 50%;
@@ -739,6 +752,12 @@ footer {
         font-weight: 500;
     }
 }
+.column {
+  float: left;
+  width: 33.33%;
+}
+
+
 
 #contact-form {
     max-width: 500px;
@@ -961,6 +980,9 @@ footer {
     .project-image {
         display: none;
     }
+    .about-image {
+        display: none;
+    }
 
     .project-info {
         position: relative;
@@ -975,8 +997,11 @@ footer {
     }
 
     .social {
-        text-align: center;
+        text-align: right;
     }
+    .column {
+    width: 100%;
+  }
 
 }
 
@@ -997,5 +1022,8 @@ footer {
             padding: 5px 10px;
         }
     }
+    .column {
+    width: 100%;
+  }
 
 }
