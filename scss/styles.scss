@@ -34,12 +34,12 @@
 */
 
 // Define base and accent colors
-$base-color: #abcfc9;
+$base-color: #8c8c8c;
 $base-color-hover: darken($base-color, 10%);
 
 // Define background colors
-$background: #fafffe;
-$background-alt: #f2f5f4;
+$background: #ffffff;
+$background-alt: #cccccc;
 
 // Define border colors
 $border: #dcd9d9;
@@ -85,7 +85,7 @@ $text: #74808a;
 */
 
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: "Just Another Hand", cursive;
     font-size: 16px;
 
     &.active {
@@ -141,7 +141,7 @@ body {
 }
 
 header {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -212,6 +212,7 @@ header {
     padding: 0 7px;
     border-radius: 4px;
     background: $background;
+
 }
 
 #mobile-menu-close {
@@ -309,6 +310,37 @@ footer {
 
 .shadow {
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+/* Style the navbar */
+#navbar {
+  overflow: hidden;
+}
+
+/* Navbar links */
+#navbar a {
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+/* Page content */
+.content {
+  padding: 16px;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
 }
 
 .shadow-large {
@@ -648,7 +680,7 @@ footer {
 */
 
 #projects {
-    padding: 50px 15px;
+    padding: 40px 15px;
     border-bottom: 1px solid $border;
     text-align: center;
 
@@ -676,7 +708,7 @@ footer {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    margin-left: 300px;
+    margin-left: 200px;
     padding: 15px;
 
     h3 {
@@ -715,6 +747,7 @@ footer {
 #skills {
     padding: 50px 15px;
     text-align: center;
+    border-bottom: 1px solid $border;
 
     h2 {
         color: $heading;
@@ -752,17 +785,24 @@ footer {
 }
 .column {
   float: left;
-  width: 33.33%;
+  width: 31%;
   height: 325px;
-  padding: 10px;
+  margin: 10px;
+  padding: 5px;
   background: #fff;
       h3 {
         font-size: 1.5em;
         font-weight: 300;
-        color: $heading;
+        color: $text;
         margin: 0 0 15px 0;
         padding: 10px;
     }
+        //h4 {
+        //color: $text;
+        //clear: both;
+        //font-weight: 500;
+        //margin: 0 0 15px 0;
+    //}
 }
 
 .contact-image{
@@ -938,7 +978,7 @@ footer {
 @media only screen and (max-width : 768px) {
 
     header {
-        position: fixed;
+        //position: fixed;
         display: none;
         z-index: 999;
         animation: none;
@@ -977,29 +1017,12 @@ footer {
         }
     }
 
-    #lead-down {
-        display: none;
-    }
 
     .education-block {
         h3, span {
             float: none;
         }
     }
-
-    .project-image {
-        display: none;
-    }
-    .about-image {
-        display: none;
-    }
-    .contact-image{
-    display: none;
-    }
-    .edu-image {
-        display: none;
-    }
-
     .project-info {
         position: relative;
         margin: 0;
