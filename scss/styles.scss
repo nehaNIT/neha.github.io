@@ -817,7 +817,7 @@ footer {
   width: 31%;
   height: 325px;
   margin: 10px;
-  padding: 5px;
+  padding: 0 0 0 10px;
   background: #fff;
       h3 {
         font-size: 1.5em;
@@ -1046,8 +1046,8 @@ footer {
         }
     }
     .about-image {
-       display:none;
-}
+       display: none;
+    }
 
 
     .education-block {
@@ -1063,8 +1063,8 @@ footer {
         transform: none;
     }
     .project-image {
-       display:none;
-}
+       display: none;
+    }
 
 
     footer {
@@ -1072,7 +1072,7 @@ footer {
     }
 
     .social {
-        text-align: right;
+        text-align: center;
     }
     .column {
     width: 100%;
